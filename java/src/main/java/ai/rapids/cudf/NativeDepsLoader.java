@@ -54,9 +54,9 @@ public class NativeDepsLoader {
    * subsequent stages are loaded.
    */
   private static final String[][] loadOrder = new String[][]{
-      new String[]{
-          "nvcomp_bitcomp", "nvcomp_gdeflate"
-      },
+      // new String[]{
+      //     "nvcomp_bitcomp", "nvcomp_gdeflate"
+      // },
       new String[]{
           "nvcomp"
       },
