@@ -27,4 +27,9 @@ else()
 endif()
 
 set(rapids-cmake-version "${RAPIDS_VERSION_MAJOR_MINOR}")
+
+set(rapids-cmake-fetch-via-git ON)
+set(rapids-cmake-repo "yinqingh/rapids-cmake.git")
+set(rapids-cmake-branch "yinqing/branch-25.08")  
+
 include("${CMAKE_CURRENT_LIST_DIR}/RAPIDS.cmake")

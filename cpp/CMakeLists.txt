@@ -30,12 +30,12 @@ project(
   LANGUAGES C CXX CUDA
 )
 
-if(CMAKE_CUDA_COMPILER_ID STREQUAL "NVIDIA" AND CMAKE_CUDA_COMPILER_VERSION VERSION_LESS 12.0)
-  message(
-    FATAL_ERROR
-      "libcudf requires CUDA Toolkit 12.0+ to compile (nvcc ${CMAKE_CUDA_COMPILER_VERSION} provided)"
-  )
-endif()
+# if(CMAKE_CUDA_COMPILER_ID STREQUAL "NVIDIA" AND CMAKE_CUDA_COMPILER_VERSION VERSION_LESS 12.0)
+#   message(
+#     FATAL_ERROR
+#       "libcudf requires CUDA Toolkit 12.0+ to compile (nvcc ${CMAKE_CUDA_COMPILER_VERSION} provided)"
+#   )
+# endif()
 
 rapids_cmake_write_version_file(include/cudf/version_config.hpp)
 
